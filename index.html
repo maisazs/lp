@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <header id="header">
+        <div id="nav-header">
+            <img src="img/logo.png" alt="Logo" id="img-header">
+            <nav id="nav-desktop">
+                <ul>
+                    <li class="options-nav"><a href="#header">About us</a></li>
+                    <li class="options-nav"><a href="#services">Services</a></li>
+                    <li class="options-nav"><a href="">Use Cases</a></li>
+                    <li class="options-nav"><a href="">Pricing</a></li>
+                    <li class="options-nav"><a href="">Blog</a></li>
+                    <li id="btn-nav"><a href="">Request a quote</a></li>
+                </ul>
+            </nav>
+
+            <button id="burger"><img src="img/burger.png" alt="Menu" onclick="openMenu()"></button>
+        </div>
+
+        <div>
+            <nav id="nav-mobile">
+                <ul>
+                    <button id="fechar-menu" onclick="closeMenu()"><img src="img/x.png" alt="Fechar menu"></button>
+                    <li class="options-nav"><a href="#header" onclick="closeMenu()">About us</a></li>
+                    <li class="options-nav" ><a href="#sec2-top" onclick="closeMenu()">Services</a></li>
+                    <li class="options-nav"><a href="#use-cases" onclick="closeMenu()">Use Cases</a></li>
+                    <li class="options-nav"><a href="" onclick="closeMenu()">Pricing</a></li>
+                    <li class="options-nav"><a href="" onclick="closeMenu()">Blog</a></li>
+                    <li id="btn-nav"><a href="" onclick="closeMenu()">Request a quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sec1">
+            <div id="sec1-container">
+                <div id="sec1-container-txt">
+                    <h1>Navigating the digital landscape for success</h1>
+                    <img src="img/illustration-sec1.png" alt="" id="sec1-img-txt">
+                    <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+                    <a href="#">Book a consultation</a>
+                </div>
+                <div id="sec1-container-img">
+                    <img src="img/illustration-sec1.png" alt="">
+                </div>
+            </div>
+            <div id="sec1-imgs">
+                <img src="img/amazon.png" alt="Amazon logo" class="img-sec1">
+                <img src="img/dribble.png" alt="Dribble logo" class="img-sec1">
+                <img src="img/hubspot.png" alt="Hubspot logo" class="img-sec1">
+                <img src="img/notion.png" alt="Notion logo" class="img-sec1">
+                <img src="img/netflix.png" alt="Netflix logo" class="img-sec1">
+                <img src="img/zoom.png" alt="Zoom logo" class="img-sec1">
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="sec2-top">
+                <h2>Services</h2>
+                <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+            </div>
+            <div id="quadros">
+                <div id="sec2-quadros">
+                    <div class="sec2-quadro-branco">
+                        <div class="quadro-txt">
+                            <h3>Search engine</h3>
+                            <h3>optimization</h3>
+                            <a href="#"><img src="img/seta-verde.png" alt=""> Learn more</a>
+                        </div>
+                        <img src="img/search.png" alt="imagem" class="img-quadro">
+                    </div>
+                </div>
+
+                <div id="sec2-quadros">
+                    <div class="sec2-quadro-branco quadro-verde">
+                        <div class="quadro-txt">
+                            <h3>Pay-per-click</h3>
+                            <h3>advertising</h3>
+                            <a href="#"><img src="img/seta-verde.png" alt=""> Learn more</a>
+                        </div>
+                        <img src="img/pay.png" alt="imagem" class="img-quadro">
+                    </div>
+                </div>
+
+                <div id="sec2-quadros">
+                    <div class="sec2-quadro-branco quadro-preto">
+                        <div class="quadro-txt">
+                            <h3>Social Media</h3>
+                            <h3>Marketing</h3>
+                            <a href="#"><img src="img/seta-preta.png" alt=""> Learn more</a>
+                        </div>
+                        <img src="img/social.png" alt="imagem" class="img-quadro">
+                    </div>
+                </div>
+
+                <div id="sec2-quadros">
+                    <div class="sec2-quadro-branco">
+                        <div class="quadro-txt">
+                            <h3>Email</h3>
+                            <h3>Marketing</h3>
+                            <a href="#"><img src="img/seta-verde.png" alt=""> Learn more</a>
+                        </div>
+                        <img src="img/email.png" alt="imagem" class="img-quadro">
+                    </div>
+                </div>
+
+                <div id="sec2-quadros">
+                    <div class="sec2-quadro-branco quadro-verde">
+                        <div class="quadro-txt">
+                            <h3>Content</h3>
+                            <h3>Creation</h3>
+                            <a href="#"><img src="img/seta-verde.png" alt=""> Learn more</a>
+                        </div>
+                        <img src="img/content.png" alt="imagem" class="img-quadro">
+                    </div>
+                </div>
+
+                <div id="sec2-quadros">
+                    <div class="sec2-quadro-branco quadro-preto quadro-preto-verde">
+                        <div class="quadro-txt">
+                            <h3>Analytics and</h3>
+                            <h3>Tracking</h3>
+                            <a href="#"><img src="img/seta-preta.png" alt=""> Learn more</a>
+                        </div>
+                        <img src="img/analytics.png" alt="imagem" class="img-quadro">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec3">
+            <div id="sec3-container">
+                <div id="sec3-txt">
+                    <h2>Let’s make things happen</h2>
+                    <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
+                    <a href="#">Get your free proposal</a>
+                </div>
+                <img src="img/illustration-sec3.png" alt="imagem" id="sec3-img">
+            </div>
+        </section>
+
+        <section id="use-cases">
+            <div class="sec2-top">
+                <h2>Case Studies</h2>
+                <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+            </div>
+            <div id="carroussel">
+                <div id="use-cases-quadros">
+                    <div class="use-cases-quadro" id="use-cases-first" onclick="carroussel1()">
+                        <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                        <a href="#">Learn more <img src="img/seta-verde.png" alt="seta verde"></a>
+                    </div>
+                    <div class="use-cases-quadro" id="use-cases-meio" onclick="carroussel2()">
+                        <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
+                        <a href="#">Learn more <img src="img/seta-verde.png" alt="seta verde"></a>
+                    </div>
+                    <div class="use-cases-quadro" id="use-cases-last" onclick="carroussel3()">
+                        <p>For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
+                        <a href="#">Learn more <img src="img/seta-verde.png" alt="seta verde"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
