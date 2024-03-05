@@ -626,12 +626,12 @@ div#use-cases-meio {
 
 @media screen and (max-width: 1065px){
     section#use-cases {
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
     div#use-cases-quadros {
         background-color: $light;
-        margin-top: 50px;
+        margin-top: 20px;
         width: 1000px;
         gap: 10px;
         transition: 1s;
@@ -718,7 +718,7 @@ div.sec5-quadro-top {
 }
 
 div.sec5-quadro-top-line {
-    background-color: $light;
+    background-color: transparent;
     width: 58px;
     height: 58px;
     display: flex;
@@ -760,7 +760,11 @@ div.sec5-quadro-bottom {
 
 div.sec5-quadro-aberto {
     height: 279px;
-    background-color: #b9ff66;
+    background-color: $primary;
+
+    div.sec5-quadro-top-line {
+        background-color: $light;
+    }
 
     div.sec5-quadro-line {
         display: block;
@@ -777,7 +781,11 @@ div.sec5-quadro-aberto {
 
 div.sec5-quadro-fechado {
     height: 159px;
-    background-color: #f3f3f3;
+    background-color: $primary-light;
+
+    div.sec5-quadro-top-line {
+        background-color: transparent;
+    }
 
     div.sec5-quadro-line {
         display: none;
@@ -793,5 +801,30 @@ div.sec5-quadro-fechado {
 }
 
 @media screen and (max-width: 820px){
+
+    div.sec5-quadro-top {
+        div.sec5-quadro-top-txt {
+            p {
+                font-size: 35px;
+            }
+
+            h3 {
+                font-size: 20px;
+                max-width: 222px;
+            }
+        }
+    }
+
+    div.sec5-quadro-bottom  {
+        font-size: 15px;
+    }
+
+    section#sec5 {
+        margin-top: 10px;
+    }
     
+    div#sec5-bottom {
+        margin-inline: 10px;
+        margin-top: 30px;
+    }
 }
