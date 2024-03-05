@@ -800,6 +800,24 @@ div#see-team-div {
 @media screen and (max-width: 842px) {
   div#see-team-div {
     justify-content: center;
-    margin-right: 0;
+    margin-inline: 10px;
+  }
+  div.sec6-quadro-top div p {
+    font-size: 16px;
+  }
+  div.sec6-quadro-bottom {
+    font-size: 15px;
+  }
+  div.sec6-quadro {
+    height: 294px;
+  }
+  section#sec6 {
+    margin-top: 65px;
+  }
+  div#sec6-quadros {
+    margin-top: 30px;
+  }
+  a#see-team {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
