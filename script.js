@@ -134,3 +134,24 @@ function abrirQuadro(classe) {
             classe.classList.add('sec5-quadro-fechado');
         }
 }
+
+//baloes
+
+var prev = document.querySelector('#prev');
+var next = document.querySelector('#next');
+var b1 = document.querySelector('#b1');
+var b2 = document.querySelector('#b2');
+var b3 = document.querySelector('#b3');
+var b4 = document.querySelector('#b4');
+var b5 = document.querySelector('#b5');
+var balao1 = document.querySelector('#balao1');
+var balao2 = document.querySelector('#balao2');
+var balao3 = document.querySelector('#balao3');
+var balao4 = document.querySelector('#balao4');
+var balao5 = document.querySelector('#balao5');
+
+function balao1() {
+    if (balao1.classList.contais('')) {
+        
+    }
+}
