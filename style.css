@@ -1051,4 +1051,167 @@ input[type=radio]:checked {
   p.form-campos textarea {
     height: 100px;
   }
+}
+footer {
+  max-width: 1241px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+div#footer-container {
+  border-radius: 45px 45px 0 0;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  margin-inline: 10px;
+  padding: 50px;
+  justify-content: center;
+  gap: 35px;
+}
+
+div#line-footer {
+  width: 100%;
+  background-color: #fff;
+  height: 1px;
+}
+
+div.footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.footer-menu nav ul {
+  display: flex;
+  gap: 30px;
+}
+div.footer-menu nav ul li {
+  transition: 0.5s;
+}
+
+li.footer-li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+li.footer-li a:hover {
+  text-decoration: underline;
+}
+
+li.footer-redes:hover {
+  scale: 1.1;
+}
+
+div#footer-mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div#footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 185px;
+  font-size: 18px;
+  font-weight: 300;
+}
+div#footer-contact h4 {
+  padding: 0 10px;
+  background-color: #b9ff66;
+  border-radius: 7px;
+  color: #000;
+  font-size: 20px;
+}
+
+div#footer-email {
+  width: 634px;
+  height: 184px;
+  background-color: #191a23;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div#footer-email input {
+  padding: 20px 30px;
+  border-radius: 14px;
+  font-size: 18px;
+}
+
+input#email-email {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+input#email-btn {
+  border: none;
+  background-color: #b9ff66;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 1s;
+}
+
+input#email-btn:hover {
+  background-color: #fff;
+}
+
+div#footer-copy {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-weight: 300;
+}
+div#footer-copy a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+  footer {
+    max-width: auto;
+    margin-top: 200px;
+  }
+  div#footer-container {
+    border-radius: 0;
+    margin-inline: 0;
+    height: auto;
+    padding: 50px;
+    justify-content: center;
+    gap: 35px;
+  }
+  div.footer-menu {
+    flex-direction: column;
+    gap: 40px;
+  }
+  div.footer-menu nav ul {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.footer-menu nav ul li.footer-redes {
+    display: none;
+  }
+  div.footer-menu nav ul li.blog {
+    display: none;
+  }
+  div#footer-mid {
+    flex-direction: column;
+  }
+  div#footer-contact {
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap: 30px;
+  }
+  div#footer-email {
+    margin-top: 50px;
+    width: 390px;
+    height: 216px;
+  }
 }/*# sourceMappingURL=style.css.map */
