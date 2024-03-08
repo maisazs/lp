@@ -135,23 +135,45 @@ function abrirQuadro(classe) {
         }
 }
 
+//---------------------------------------------------------------------------------------------------
 //baloes
 
-var prev = document.querySelector('#prev');
-var next = document.querySelector('#next');
-var b1 = document.querySelector('#b1');
-var b2 = document.querySelector('#b2');
-var b3 = document.querySelector('#b3');
-var b4 = document.querySelector('#b4');
-var b5 = document.querySelector('#b5');
-var balao1 = document.querySelector('#balao1');
-var balao2 = document.querySelector('#balao2');
-var balao3 = document.querySelector('#balao3');
-var balao4 = document.querySelector('#balao4');
-var balao5 = document.querySelector('#balao5');
+/*const imgs = document.getElementById('baloes');
+const img = document.querySelectorAll('#baloes sec7-baloes');
 
-function balao1() {
-    if (balao1.classList.contais('')) {
-        
+let idx = 0;
+
+function carrossel() {
+    idx++;
+
+    if (idx > img.length - 1) {
+        idx = 0;
+    }
+
+    imgs.style.transform = `translateX(${-idx * 500}px)`;
+}
+
+setInterval(carrossel, 1800);*/
+
+var balao = document.getElementById('baloes');
+var qnt = document.querySelector('sec7-baloes');
+
+var idx = 0;
+
+function next() {
+    idx++;
+
+    for (let i = 0 ; i < 5 ; i ++) {
+        balao.style.transform = `translateX(${-idx * 636}px)`;
     }
 }
+
+function prev() {
+    idx--;
+
+    for (let i = 0 ; i < 5 ; i ++) {
+        balao.style.transform = `translateX(${idx * 636}px)`;
+    }
+}
+//606
+
