@@ -496,9 +496,11 @@ div.quadro-preto-verde {
         height: 372px;
         margin-inline: 5%;
         margin: auto;
-        gap: 0;
+        gap: 10%;
 
         div.quadro-txt {
+            width: 30vw;
+
             h3 {
                 font-size: 25px;
                 position: relative;
@@ -506,7 +508,8 @@ div.quadro-preto-verde {
         }
     }
     img.img-quadro {
-        width: 165px;
+        width: 35vw;
+        
     }
 }
 
@@ -967,9 +970,14 @@ div#see-team-div {
     margin-right: 10px;
 }
 
-@media screen and (max-width: 842px){
+@media screen and (max-width: 1255px) {
     div#see-team-div {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 842px){
+    div#see-team-div {
         margin-inline: 10px;
     }
 
@@ -996,9 +1004,6 @@ div#see-team-div {
         margin-top: 30px;
     }
 
-    a#see-team {
-        width: 100%;
-    }
 }
 
 //---------------------------------------------------------------------------------------------------

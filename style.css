@@ -424,14 +424,17 @@ div.quadro-preto-verde div.quadro-txt a:hover {
     height: 372px;
     margin-inline: 5%;
     margin: auto;
-    gap: 0;
+    gap: 10%;
+  }
+  div.sec2-quadro-branco div.quadro-txt {
+    width: 30vw;
   }
   div.sec2-quadro-branco div.quadro-txt h3 {
     font-size: 25px;
     position: relative;
   }
   img.img-quadro {
-    width: 165px;
+    width: 35vw;
   }
 }
 section#sec3 {
@@ -832,9 +835,13 @@ div#see-team-div {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 842px) {
+@media screen and (max-width: 1255px) {
   div#see-team-div {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 842px) {
+  div#see-team-div {
     margin-inline: 10px;
   }
   div.sec6-quadro-top div p {
@@ -851,9 +858,6 @@ div#see-team-div {
   }
   div#sec6-quadros {
     margin-top: 30px;
-  }
-  a#see-team {
-    width: 100%;
   }
 }
 section#sec7 {
