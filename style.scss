@@ -224,13 +224,46 @@ div#sec1-container-img {
     }
 }
 
+/* Container do slider */
 div#sec1-imgs {
-    filter: saturate(0);
-    display: flex;
-    justify-content: space-between;
     margin-top: 70px;
-    overflow: hidden;
+    width: 100%;
+    overflow: hidden; /* Esconder as imagens fora da área visível */
+    position: relative;
 }
+
+/* Faixa de imagens que vai deslizar */
+.sec1-imgs-track {
+    display: flex;
+    animation: scroll 20s linear infinite; /* Animação contínua */
+    gap: 40px;
+}
+
+/* Imagens dentro do slider */
+.img-sec1 {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    flex-shrink: 0; /* Evita que as imagens encolham */
+    filter: saturate(0);
+}
+
+/* Animação para mover as imagens */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Começa no início */
+    }
+    100% {
+        transform: translateX(-100%); /* Move até a metade do conteúdo (para loop) */
+    }
+}
+
+/* Efeito ao passar o mouse */
+.img-sec1:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
 
 @media screen and (max-width: 1065px){
     section#sec1 {
@@ -450,7 +483,7 @@ div.quadro-preto-verde {
         margin: auto;
 
         p {
-            max-width: 100vw;
+            max-width: 90vw;
             text-align: center;
             font-size: 16px;
             margin: auto;
@@ -1050,8 +1083,9 @@ img.balao-p {
 }
 
 @media screen and (max-width: 650px){
+
     div#sec7-container {
-        max-width: 390px;
+        max-width: 100vw;
         height: 554px;
         margin: auto;
         margin-top: 50px;
