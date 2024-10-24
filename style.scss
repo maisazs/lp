@@ -236,7 +236,7 @@ div#sec1-imgs {
 .sec1-imgs-track {
     display: flex;
     animation: scroll 20s linear infinite; /* Animação contínua */
-    gap: 40px;
+    gap: 38px;
 }
 
 /* Imagens dentro do slider */
@@ -269,6 +269,7 @@ div#sec1-imgs {
     section#sec1 {
         max-width: 400px;
         overflow: hidden;
+        text-align: center;
     }
 
     div#sec1-container-txt{
@@ -309,11 +310,10 @@ div#sec1-imgs {
         padding: 0;
     }
 
-    div#sec1-imgs {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
+    .img-sec1 {
+        gap: 10px;
     }
+
 }
 
 //---------------------------------------------------------------------------------------------------
