@@ -441,24 +441,28 @@ div.quadro-preto-verde {
 
     section#services {
         padding-top: 60px;
-        max-width: 400px;
+        max-width: 100vw;
     }
 
     div.sec2-top {
         flex-direction: column;
-        max-width: 400px;
+        max-width: 100vw;
         margin: auto;
 
         p {
-            max-width: 390px;
+            max-width: 100vw;
             text-align: center;
             font-size: 16px;
+            margin: auto;
+            margin-inline: 5%;
         }
     }
 
     div.sec2-quadro-branco {
-        width: 390px;
+        width: 90vw;
         height: 372px;
+        margin-inline: 5%;
+        margin: auto;
         gap: 0;
 
         div.quadro-txt {
