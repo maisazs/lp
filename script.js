@@ -155,7 +155,7 @@ function carrossel() {
 
 setInterval(carrossel, 1800);*/
 
-var balao = document.getElementById('baloes');
+/*var balao = document.getElementById('baloes');
 var qnt = document.querySelector('sec7-baloes');
 
 var idx = 0;
@@ -175,5 +175,51 @@ function prev() {
         balao.style.transform = `translateX(${idx * 636}px)`;
     }
 }
-//606
-//-------------------------------------------------------------------------------------------------------------------
+//606*/
+//---------------------------------------------------------------------------------------------
+
+let currentSlide = 0; // slide atual
+const slides = document.querySelectorAll('.sec7-baloes'); // seleciona os balões
+const totalSlides = slides.length; // número total de balões
+const indicators = document.querySelectorAll('.indicador'); // seleciona as bolinhas
+
+// Função para atualizar o slide e trocar as bolinhas
+function showSlide(index) {
+    // Esconde todos os balões
+    slides.forEach(slide => {
+        slide.style.display = 'none';
+    });
+    
+    // Mostra o balão do índice atual
+    slides[index].style.display = 'block';
+
+    // Atualiza os indicadores (bolinhas)
+    indicators.forEach((indicator, i) => {
+        if (i === index) {
+            indicator.src = 'img/bola-verde.png'; // Deixa a bola atual verde
+        } else {
+            indicator.src = 'img/bola-branca.png'; // As demais bolas ficam brancas
+        }
+    });
+}
+
+// Função para mostrar o slide anterior
+function prev() {
+    currentSlide = (currentSlide > 0) ? currentSlide - 1 : totalSlides - 1;
+    showSlide(currentSlide);
+}
+
+// Função para mostrar o próximo slide
+function next() {
+    currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
+    showSlide(currentSlide);
+}
+
+// Função para ir a um slide específico ao clicar na bolinha
+function goToSlide(index) {
+    currentSlide = index;
+    showSlide(currentSlide);
+}
+
+// Inicia o carrossel mostrando o primeiro balão
+showSlide(currentSlide);
